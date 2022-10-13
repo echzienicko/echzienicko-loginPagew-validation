@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="dashboardstyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="mediaQuery.css">
+	<title>TABLE</title>
+</head>
+<body>
+	<!-- Navagation Bar -->
+	<div class="navbar is-dark">
+		<div class="container">
+			<div class="logo">
+				<h1 class="title is-2"><a href="dashboard"><img src="ist.png" alt="logo">RuralNet</a></h1>
+			</div>
+			<div class="navbar-end">
+				<ul>
+					<li><a href="login">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- ADD MODAL -->
+	<div class="modal" id="addModal">
+		<div class="modal-background">
+			<div class="modal-content has-background-white">
+			<div class="myForm">
+			<h1 class="title is-1">Add User</h1>
+				<div class="field">
+					<label class="label">Username</label>
+					<input class="input" type="text" name="name" id="addUser">
+				</div>
+
+				<div class="field">
+					<label class="label">Password</label>
+					<input class="input" type="password" name="password" id="password">
+				</div>
+
+				<div class="field-type">
+					<div class="field">
+					  	<label class="label">User Type</label>
+					  	<div class="control">
+					    	<div class="select">
+					      		<select id="addUserType">
+					        		<option>CS</option>
+					        		<option>QA</option>
+									<option>IT</option>
+					      		</select>
+					    	</div>
+					  	</div>
+					</div>
+
+					<div class="field">
+					  	<label class="label">Access Type</label>
+						<div class="control">
+					    	<div class="select">
+								<select name="access" id="addAccessType">
+									<option>CS1</option>
+									<option>CS2</option>
+									<option>QA1</option>
+									<option>QA2</option>
+									<option>IT</option>
+									<option>Approver</option>
+								</select>
+					    	</div>
+					  	</div>
+					</div>
+
+					<div class="field">
+						<label class="label">User Status</label>
+					  <div class="control">
+						  <div class="select">
+							  <select name="access" id="addUserStatus">
+								  <option>ACT</option>
+								  <option>DAC</option>
+							  </select>
+						  </div>
+						</div>
+				  </div>
+				</div>
+						<div class="buttons my-5">
+							<button class="button is-primary" onclick="addUser()">Add</button>
+							<button class="button is-danger" id="cancel" onclick="addClose()">Cancel</button>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- VIEW USER MODAL -->
+	<div class="viewUserModal">
+		<div class="viewUserModalbg">
+			<div class="viewUserModalContent">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Username</th>
+							<th>Password</th>
+							<th>User type</th>
+							<th>Access type</th>
+							<th>User Status</th>
+                            <th><button class="button is-primary fa-plus" id="btnModal" onclick="btnModal()">Add User</button></th>
+						</tr>
+					</thead>
+					<tbody id="tBody">
+						
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>
+								<div class="fieldPen">
+									<input type="text" class="input" id="userEdit" placeholder="Username" disabled>
+								</div>
+							</td>
+							<td>
+								<div class="fieldPen">
+									<input type="password" class="input" id="passEdit" placeholder="Password">
+								</div>
+							</td>
+							<td>
+								<div class="control">
+									<div class="select">
+										<select name="" id="userTypeEdit">
+											<option value="CS">CS</option>
+											<option value="QA">QA</option>
+											<option value="IT">IT</option>
+										</select>
+									</div>		
+								</div>
+							</td>
+							<td>
+								<div class="control">
+									<div class="select">
+										<select name="access" id="accessTypeEdit">
+											<option value="CS1">CS1</option>
+											<option value="CS2">CS2</option>
+											<option value="QA1">QA1</option>
+											<option value="QA2">QA2</option>
+											<option value="IT">IT</option>
+											<option value="Approver">Approver</option>
+										</select>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="control">
+									<div class="select">
+										<select name="access" id="userStatusEdit">
+											<option value="ACT">ACT</option>
+											<option value="DAC">DAC</option>
+										</select>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="fieldPen">
+									<button class="button is-success" id="btnSaveEdit" onclick="updateUser()">Update</button>
+								</div>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="admin.js"></script>
+</html>

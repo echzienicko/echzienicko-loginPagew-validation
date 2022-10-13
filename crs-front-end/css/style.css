@@ -1,0 +1,6 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.navbar-end{ align-items: center; }
+
+.myForm{ width: 35%; margin: 0 auto; }
+.field-type{ display: flex; justify-content: space-between; flex-wrap: wrap; }

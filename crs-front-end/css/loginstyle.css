@@ -1,0 +1,7 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+html{ background-color: #5f8592; }
+
+.login{ width: 432px; margin: 0 auto; background-color: #fff; box-shadow: 0 5px 10px rgb(0 10 20), 0 20px 40px rgb(0 0 0 / 10%); margin-top: 150px; border-radius: 5px;}
+
+.title{ border-bottom: 1px solid #dadde1 }

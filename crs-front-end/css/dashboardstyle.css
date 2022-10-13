@@ -1,0 +1,50 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.navbar>.container {  align-items: center; min-height: 5.25rem; box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);}
+ul li{ display: inline-block; padding: 0 10px; border-radius: 8px; padding: 10px; }
+ul li a{  color: #fff; }
+a:hover{ cursor: pointer; color: #fff; font-weight: bold; }
+
+.mainColumn{ display: flex; justify-content: space-between; flex-wrap: wrap; }
+.column{ height: 80vh; overflow: auto; width: 30%; border: solid 1px #00000030; border-radius: 10px; box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%); }
+.crm{ width: 100%; border: solid 1px #00000030; border-radius: 10px; min-height: 20vh; word-wrap: break-word;}
+
+table { border-collapse: collapse;  width: 100%;  border-spacing: 0;     margin-top: 10px; }
+.fieldPen{ width: 90%; display: inline-block;}
+.field-type{ display: flex; justify-content: space-between; flex-wrap: wrap; }
+.buttons{ display: flex; flex-wrap: wrap; }
+
+.modal-background {  background-color: rgb(54 50 50 / 82%); }
+.modal-content {     background-color: #fff;     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);     margin-top: 85px;     padding: 40px; }
+
+.modalPending{ display: none; }
+.modalBackground{  z-index: 9999999;    position: fixed;   top: 0;   left: 0;   width: 100%;   height: 100%;     background-color: rgb(54 50 50 / 82%); }
+.modalContent {     width: 50%;     margin: 0 auto;     background-color: #fff;     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);     margin-top: 85px;     padding: 40px; }
+.fieldPending{ width:20%; display: inline-block; }
+
+.myFormEdit{ width: 100%; }
+.editModal{ display: none; }
+.editModalbg{  z-index: 9999999;    position: fixed;   top: 0;   left: 0;   width: 100%;   height: 100%;     background-color: rgb(54 50 50 / 82%); }
+.editModalContent {     width: 85%;     height: 80vh;     margin: 0 auto;     background-color: #fff;     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);     overflow: auto;     margin-top: 85px;     padding: 10px; display: flex; justify-content: space-between; flex-wrap: wrap;}
+
+.displayModal{ display: none; }
+.displayModalbg{  z-index: 9999999;    position: fixed;   top: 0;   left: 0;   width: 100%;   height: 100%;     background-color: rgb(54 50 50 / 82%);}
+.displayModalContent {     width: 85%;     height: 80vh;     margin: 0 auto;     background-color: #fff;     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);     overflow: auto;     margin-top: 85px;     padding: 10px; display: flex; justify-content: space-between; flex-wrap: wrap;}
+
+.fieldPendi{ width: 93%; display: inline-block;}
+.fieldPend{ width: 24%; display: inline-block;}
+
+.viewUserModalContent {     width: 85%;     margin: 0 auto;     background-color: #fff;     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);     height: 75vh; }
+
+.fa { cursor: pointer !important; padding: 0 5px; }
+.fa:hover { transform: scale(.95);  color: rgb(59, 92, 202); }
+.fa-circle-xmark:before, .fa-times-circle:before, .fa-xmark-circle:before {  z-index: 9999999;   content: "\f057";     position: absolute;     top: 125px;     right: 155px; }
+
+.label:not(:last-child) {     margin-bottom: 0; }
+.label {     color: #363636;     display: block;     font-size: 1rem;     font-weight: 600; }
+.block:not(:last-child), .box:not(:last-child), .breadcrumb:not(:last-child), .content:not(:last-child), .level:not(:last-child), .message:not(:last-child), .notification:not(:last-child), .pagination:not(:last-child), .progress:not(:last-child), .subtitle:not(:last-child), .table-container:not(:last-child), .table:not(:last-child), .tabs:not(:last-child), .title:not(:last-child) {     margin-bottom: 0.5rem; }
+
+.floatRight{ float: right; }
+.width{ width: 90%;}
+.italic{ font-style: italic; }
+.bold{ font-weight: bold; }
